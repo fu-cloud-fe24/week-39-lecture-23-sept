@@ -1,0 +1,39 @@
+.home-page {
+    width: 100%;
+    overflow-x: hidden;
+
+    .home-page__hero {
+        min-height: 100vh;
+        max-width: 100%;
+        /* background-image: url('./bg1.jpg'); */
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        animation: zoom 10s ease-in-out infinite alternate;
+    
+        .arrow {
+            padding: 2rem;
+            font-size: 3rem;
+            display: inline-block;
+            animation: bounce 1.5s infinite;
+            color: #BE8B65;
+        }
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}

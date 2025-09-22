@@ -1,0 +1,53 @@
+.bookings__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+
+    .bookings__item {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.5rem;
+        padding: 1rem;
+        border-top: 1px solid #BE8B65;
+
+        .bookings__info {
+            display: flex;
+            place-items: center;
+            font-size: 1.25rem;
+        }
+
+        .bookings__button {
+            position: relative;
+            overflow: hidden;
+            background: transparent;
+            border: 2px solid #BE8B65;
+            color: #BE8B65;
+            padding: 1rem;
+            cursor: pointer;
+            z-index: 1;
+            font-size: 1.25rem;
+        }
+
+        .bookings__button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #BE8B65;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease;
+            z-index: -1;
+        }
+
+        .bookings__button:hover::before {
+            transform: scaleX(1);
+        }
+
+        .bookings__button:hover {
+            color: white;
+        }
+    }
+}

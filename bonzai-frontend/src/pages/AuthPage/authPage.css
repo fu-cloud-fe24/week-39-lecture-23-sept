@@ -1,0 +1,13 @@
+.auth-page {
+    height: 100vh;
+    min-width: 100vw;
+    background-image: url('./bg4.jpg');
+    background-position: 50% 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: zoom 10s ease-in-out infinite alternate;
+}

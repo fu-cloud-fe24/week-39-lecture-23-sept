@@ -1,0 +1,14 @@
+.logo {
+    position: absolute;
+    width: 200px;
+    top: 2rem;
+    left: 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+
+    .logo__img {
+        width: 100%;
+        border-radius: 10px;
+        transform: scale(1.5);
+    }
+}
